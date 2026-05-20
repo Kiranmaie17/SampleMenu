@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div id="loginSection">
+            <h1>Admin Login</h1>
+
+            <input type="email" id="adminEmail" placeholder="Enter Email">
+            <input type="password" id="adminPassword" placeholder="Enter Password">
+
+            <button id="loginBtn">Login</button>
+
+            <p id="loginError" class="error"></p>
+        </div>
+
+        <div id="dashboardSection" style="display:none;">
+
+            <div class="dashboard-top">
+                <h1>Applications Dashboard</h1>
+                <button id="logoutBtn">Logout</button>
+            </div>
+
+            <p id="loadingMessage">Loading applications...</p>
+            <p id="emptyMessage"></p>
+
+            <table id="applicationsTable">
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Position</th>
+                        <th>Experience</th>
+                        <th>Reason</th>
+                        <th>Submitted At</th>
+                    </tr>
+                </thead>
+
+                <tbody></tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <script type="module" src="admin.js"></script>
+</body>
+</html>
+
+
+

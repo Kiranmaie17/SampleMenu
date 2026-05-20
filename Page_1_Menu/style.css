@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #96addf;
+    padding-bottom: 90px;
+}
+.hero {
+    background: linear-gradient(to right, #c0392b, #e67e22);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.filter-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 25px 20px;
+}
+.filter-btn {
+    padding: 10px 18px;
+    border: none;
+    background: white;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #d35400;
+    color: white;
+}
+.menu-container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-content {
+    padding: 18px;
+}
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.veg-dot,
+.nonveg-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+.veg-dot {
+    background: green;
+}
+
+.nonveg-dot {
+    background: red;
+}
+
+.description {
+    color: #555;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.price {
+    font-size: 20px;
+    color: #d35400;
+    font-weight: bold;
+}
+
+.add-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #d35400;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background: #a84300;
+}
+.cart-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 30px;
+    font-size: 18px;
+}
+
+@media(max-width: 768px) {
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+    .hero h1 {
+        font-size: 30px;
+   }
+}

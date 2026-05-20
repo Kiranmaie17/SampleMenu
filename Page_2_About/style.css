@@ -1,0 +1,269 @@
+
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: Arial, sans-serif;
+
+}
+
+
+
+body {
+
+    background: #fff8f2;
+
+    color: #333;
+
+}
+
+
+
+nav {
+
+    background: #c0392b;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 18px 40px;
+
+}
+
+
+
+.logo {
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+}
+
+
+
+nav ul {
+
+    display: flex;
+
+    list-style: none;
+
+    gap: 20px;
+
+}
+
+
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+
+
+.hero {
+
+    background: linear-gradient(to right, #e67e22, #d35400);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 100px 20px;
+
+}
+
+
+
+.hero h1 {
+
+    font-size: 48px;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.story,
+
+.specialities,
+
+.visit {
+
+    width: 85%;
+
+    margin: 50px auto;
+
+}
+
+
+
+.story h2,
+
+.specialities h2,
+
+.visit h2 {
+
+    margin-bottom: 20px;
+
+    color: #c0392b;
+
+}
+
+
+
+.story p {
+
+    margin-bottom: 18px;
+
+    line-height: 1.8;
+
+}
+
+
+
+.speciality-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+}
+
+
+
+.special-card {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+}
+
+
+
+.visit table {
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    border-collapse: collapse;
+
+}
+
+
+
+.visit table,
+
+.visit th,
+
+.visit td {
+
+    border: 1px solid #ccc;
+
+}
+
+
+
+.visit th,
+
+.visit td {
+
+    padding: 15px;
+
+    text-align: left;
+
+}
+
+
+
+footer {
+
+    background: #222;
+
+    color: white;
+
+    padding: 25px;
+
+    text-align: center;
+
+}
+
+
+
+footer div {
+
+    margin-top: 12px;
+
+}
+
+
+
+footer a {
+
+    color: #f39c12;
+
+    text-decoration: none;
+
+    margin: 0 10px;
+
+}
+
+
+
+@media(max-width: 768px) {
+
+
+
+    nav {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+
+
+    .speciality-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+
+    .hero h1 {
+
+        font-size: 32px;
+
+    }
+
+}
+
+

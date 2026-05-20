@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spice Junction Menu</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+<h1>Spice Junction</h1>
+<p>A Floor of Delicious Food with Authentic Flavours of Spice</p>
+</header>
+
+<section class="filter-section">
+<button class="filter-btn active" data-category="All">All</button>
+<button class="filter-btn" data-category="Starters">Starters</button>
+<button class="filter-btn" data-category="Main Course">Main Course</button>
+<button class="filter-btn" data-category="Biryani">Biryani</button>
+<button class="filter-btn" data-category="Desserts">Desserts</button>
+<button class="filter-btn" data-category="Beverages">Beverages</button>
+</section>
+
+<section class="menu-container" id="menuContainer"></section>
+
+<section class="filter-section">
+<button class="fr" id="cartBar">
+<div>
+<strong id="cartCount">0</strong> Items in Cart
+</div>
+<div>
+Total: ₹<strong id="cartTotal">0</strong>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
