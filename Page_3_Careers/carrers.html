@@ -1,152 +1,60 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Careers - Spice Junction</title>
-
     <link rel="stylesheet" href="careers.css">
-
 </head>
-
 <body>
-
-
-
     <div class="container">
-
         <h1>Join Our Team at Spice Junction</h1>
-
-
-
         <p class="subtitle">
-
             We are looking for talented people who are passionate about food and hospitality.
-
         </p>
-
-
-
         <div id="successMessage" class="success-message"></div>
-
         <div id="errorMessage" class="error-message"></div>
-
-
-
         <form id="applicationForm">
-
-
-
             <div class="form-group">
-
                 <label>Full Name</label>
-
                 <input type="text" id="fullName">
-
                 <small class="error" id="nameError"></small>
-
             </div>
-
-
-
             <div class="form-group">
-
                 <label>Email</label>
-
                 <input type="email" id="email">
-
                 <small class="error" id="emailError"></small>
-
             </div>
-
-
-
             <div class="form-group">
-
                 <label>Phone Number</label>
-
                 <input type="tel" id="phone">
-
                 <small class="error" id="phoneError"></small>
-
             </div>
-
-
-
             <div class="form-group">
-
                 <label>Position Applied For</label>
-
                 <select id="position">
-
                     <option value="">Select Position</option>
-
                     <option>Chef</option>
-
                     <option>Waiter</option>
-
                     <option>Manager</option>
-
                     <option>Delivery</option>
-
                     <option>Cashier</option>
-
                 </select>
-
                 <small class="error" id="positionError"></small>
-
             </div>
-
-
-
             <div class="form-group">
-
                 <label>Experience in Years</label>
-
                 <input type="number" id="experience" min="0">
-
                 <small class="error" id="experienceError"></small>
-
             </div>
-
-
-
             <div class="form-group">
-
                 <label>Why should we hire you?</label>
-
                 <textarea id="reason"></textarea>
-
                 <small class="error" id="reasonError"></small>
-
             </div>
-
-
-
             <button type="submit" id="submitBtn">Submit Application</button>
-
-
-
         </form>
-
     </div>
-
-
-
-
-
     <script type="module" src="careers.js"></script>
-
 </body>
-
 </html>
-
-
-
-
-
