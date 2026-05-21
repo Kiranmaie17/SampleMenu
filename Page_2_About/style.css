@@ -1,269 +1,193 @@
-
-
+/* Page_2_About/style.css */
 * {
-
     margin: 0;
-
     padding: 0;
-
     box-sizing: border-box;
-
-    font-family: Arial, sans-serif;
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-
 
 body {
-
     background: #fff8f2;
-
-    color: #333;
-
+    color: #2d3436;
 }
-
-
 
 nav {
-
     background: #c0392b;
-
     color: white;
-
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
     padding: 18px 40px;
-
+    flex-wrap: wrap;
 }
-
-
 
 .logo {
-
-    font-size: 24px;
-
+    font-size: 26px;
     font-weight: bold;
-
 }
-
-
 
 nav ul {
-
     display: flex;
-
     list-style: none;
-
     gap: 20px;
-
 }
-
-
 
 nav a {
-
     color: white;
-
     text-decoration: none;
-
-    font-weight: bold;
-
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 30px;
+    transition: 0.3s;
 }
 
-
+nav a:hover, nav a.active {
+    background: #e67e22;
+}
 
 .hero {
-
-    background: linear-gradient(to right, #e67e22, #d35400);
-
+    background: linear-gradient(135deg, #e67e22, #d35400);
     color: white;
-
     text-align: center;
-
-    padding: 100px 20px;
-
+    padding: 80px 20px;
 }
-
-
 
 .hero h1 {
-
-    font-size: 48px;
-
-    margin-bottom: 15px;
-
+    font-size: 52px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
 }
 
+.hero p {
+    font-size: 20px;
+    font-weight: 300;
+}
 
-
-.story,
-
-.specialities,
-
-.visit {
-
+.story, .specialities, .visit {
     width: 85%;
-
-    margin: 50px auto;
-
+    margin: 60px auto;
 }
 
-
-
-.story h2,
-
-.specialities h2,
-
-.visit h2 {
-
-    margin-bottom: 20px;
-
+.story h2, .specialities h2, .visit h2 {
+    margin-bottom: 25px;
     color: #c0392b;
-
+    font-size: 32px;
+    position: relative;
+    display: inline-block;
 }
 
-
+.story h2:after, .specialities h2:after, .visit h2:after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: #e67e22;
+}
 
 .story p {
-
-    margin-bottom: 18px;
-
+    margin-bottom: 20px;
     line-height: 1.8;
-
+    font-size: 1.05rem;
+    color: #2c3e50;
 }
-
-
 
 .speciality-grid {
-
     display: grid;
-
     grid-template-columns: repeat(4, 1fr);
-
-    gap: 20px;
-
+    gap: 25px;
+    margin-top: 20px;
 }
-
-
 
 .special-card {
-
     background: white;
-
     padding: 25px;
-
-    border-radius: 12px;
-
+    border-radius: 20px;
     text-align: center;
-
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    border-bottom: 3px solid #e67e22;
 }
 
+.special-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
 
+.special-card h3 {
+    color: #c0392b;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
 
 .visit table {
-
     width: 100%;
-
-    margin-top: 20px;
-
+    margin-top: 25px;
     border-collapse: collapse;
-
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
-
-
-.visit table,
-
-.visit th,
-
-.visit td {
-
-    border: 1px solid #ccc;
-
-}
-
-
-
-.visit th,
-
-.visit td {
-
-    padding: 15px;
-
+.visit th, .visit td {
+    border: 1px solid #e0e0e0;
+    padding: 14px 20px;
     text-align: left;
-
 }
 
+.visit th {
+    background: #c0392b;
+    color: white;
+    font-weight: 600;
+}
 
+.visit p {
+    margin: 12px 0;
+    font-size: 1rem;
+}
 
 footer {
-
-    background: #222;
-
+    background: #2c3e50;
     color: white;
-
-    padding: 25px;
-
+    padding: 30px 20px;
     text-align: center;
-
+    margin-top: 50px;
 }
-
-
 
 footer div {
-
-    margin-top: 12px;
-
+    margin-top: 15px;
 }
-
-
 
 footer a {
-
     color: #f39c12;
-
     text-decoration: none;
-
-    margin: 0 10px;
-
+    margin: 0 12px;
+    transition: 0.3s;
 }
 
+footer a:hover {
+    color: #e67e22;
+    text-decoration: underline;
+}
 
-
-@media(max-width: 768px) {
-
-
-
+@media (max-width: 768px) {
     nav {
-
         flex-direction: column;
-
         gap: 15px;
-
+        text-align: center;
     }
-
-
-
     .speciality-grid {
-
         grid-template-columns: 1fr;
-
     }
-
-
-
     .hero h1 {
-
-        font-size: 32px;
-
+        font-size: 36px;
     }
-
+    .story, .specialities, .visit {
+        width: 92%;
+    }
+    .visit th, .visit td {
+        padding: 10px;
+    }
 }
-
-

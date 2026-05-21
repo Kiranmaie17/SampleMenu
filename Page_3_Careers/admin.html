@@ -1,59 +1,51 @@
+<!-- Page_3_Careers/admin.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Panel</title>
+    <title>Admin Panel - Spice Junction</title>
     <link rel="stylesheet" href="admin.css">
 </head>
 <body>
-
-    <div class="container">
-
-        <div id="loginSection">
+    <div class="admin-container">
+        <!-- Login Section -->
+        <div id="loginSection" class="login-card">
             <h1>Admin Login</h1>
-
-            <input type="email" id="adminEmail" placeholder="Enter Email">
-            <input type="password" id="adminPassword" placeholder="Enter Password">
-
+            <p>Enter credentials to view applications</p>
+            <input type="email" id="adminEmail" placeholder="admin@spicejunction.com">
+            <input type="password" id="adminPassword" placeholder="Password">
             <button id="loginBtn">Login</button>
-
-            <p id="loginError" class="error"></p>
+            <p id="loginError" class="error-text"></p>
         </div>
 
+        <!-- Dashboard Section -->
         <div id="dashboardSection" style="display:none;">
-
-            <div class="dashboard-top">
-                <h1>Applications Dashboard</h1>
-                <button id="logoutBtn">Logout</button>
+            <div class="dashboard-header">
+                <h1>📋 Job Applications Dashboard</h1>
+                <button id="logoutBtn" class="logout-btn">Logout</button>
             </div>
-
-            <p id="loadingMessage">Loading applications...</p>
-            <p id="emptyMessage"></p>
-
-            <table id="applicationsTable">
-                <thead>
-                    <tr>
-                        <th>S.No</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Phone</th>
-                        <th>Position</th>
-                        <th>Experience</th>
-                        <th>Reason</th>
-                        <th>Submitted At</th>
-                    </tr>
-                </thead>
-
-                <tbody></tbody>
-            </table>
+            <p id="loadingMessage" class="info-message">Loading applications...</p>
+            <p id="emptyMessage" class="info-message"></p>
+            <div class="table-wrapper">
+                <table id="applicationsTable">
+                    <thead>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Position</th>
+                            <th>Experience</th>
+                            <th>Reason</th>
+                            <th>Submitted At</th>
+                        </tr>
+                    </thead>
+                    <tbody id="appTableBody"></tbody>
+                </table>
+            </div>
         </div>
-
     </div>
-
     <script type="module" src="admin.js"></script>
 </body>
 </html>
-
-
-
